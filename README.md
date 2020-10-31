@@ -61,13 +61,8 @@ In Windows you have to install PeachPy into your Python environment to allow com
 
 in a Python Command Prompt with Administrator privileges:
 ```bash
+pip install --upgrade Opcodes
 pip install --upgrade git+https://github.com/Maratyszcza/PeachPy
-```
-or
-```bash
-git clone https://github.com/Maratyszcza/PeachPy.git
-cd PeachPy
-python setup.py develop
 ```
 
 For most users, the recommended way to build NNPACK is through CMake.
