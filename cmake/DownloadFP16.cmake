@@ -5,7 +5,7 @@ PROJECT(fp16-download NONE)
 INCLUDE(ExternalProject)
 ExternalProject_Add(fp16
 	GIT_REPOSITORY https://github.com/zulma46/FP16.git
-	GIT_TAG master
+	GIT_TAG main
 	SOURCE_DIR "${CONFU_DEPENDENCIES_SOURCE_DIR}/fp16"
 	BINARY_DIR "${CONFU_DEPENDENCIES_BINARY_DIR}/fp16"
 	CONFIGURE_COMMAND ""
