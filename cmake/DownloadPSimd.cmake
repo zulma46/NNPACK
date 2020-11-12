@@ -5,7 +5,7 @@ PROJECT(psimd-download NONE)
 INCLUDE(ExternalProject)
 ExternalProject_Add(psimd
 	GIT_REPOSITORY https://github.com/zulma46/psimd.git
-	GIT_TAG master
+	GIT_TAG main
 	SOURCE_DIR "${CONFU_DEPENDENCIES_SOURCE_DIR}/psimd"
 	BINARY_DIR "${CONFU_DEPENDENCIES_BINARY_DIR}/psimd"
 	CONFIGURE_COMMAND ""
