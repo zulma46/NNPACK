@@ -108,7 +108,7 @@ IF(NNPACK_BACKEND STREQUAL "auto")
       # ---[ now we know it is a "real" x86-64 system
       SET(NNPACK_BACKEND "x86-64")
     ENDIF()
-  ELSEIF(CMAKE_SYSTEM_PROCESSOR MATCHES "^(armv5te|armv7-a|armv7l|aarch64)$")
+  ELSEIF(NNPACK_TARGET_PROCESSOR MATCHES "^(armv5te|armv7-a|armv7l|aarch64|arm64)$")
     SET(NNPACK_BACKEND "neon")
   ELSE()
     SET(NNPACK_BACKEND "psimd")
