@@ -314,7 +314,7 @@ static enum nnp_status compute_fast_convolution_kernel_gradient(
 		memory_block = workspace_buffer;
 	}
 
-#if _WIN32
+#ifdef _WIN32
 	float* input_transform = (float*)memory_block;
 	float* grad_output_transform = (float*)((char*)memory_block + input_transform_size);
 	float* grad_kernel_transform = (float*)((char*)memory_block + input_transform_size + grad_output_transform_size);
